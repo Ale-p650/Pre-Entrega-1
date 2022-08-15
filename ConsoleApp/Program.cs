@@ -26,14 +26,16 @@ namespace ConsoleApp
             //    Console.WriteLine(u.Id.ToString() + "   " + u.Nombre.ToString());
             //}
 
-            ProductoVendidoHandler prodvenhan = new ProductoVendidoHandler();
+            //ProductoVendidoHandler prodvenhan = new ProductoVendidoHandler();
 
-            List<ProductoVendido> lista = prodvenhan.GetProdVen();
+            //List<ProductoVendido> lista = prodvenhan.GetProdVen();
 
-            foreach (ProductoVendido pv in lista)
-            {
-                Console.WriteLine(pv.Id.ToString() + "    " + pv.IdProducto.ToString());
-            }
+            //foreach (ProductoVendido pv in lista)
+            //{
+            //    Console.WriteLine(pv.Id.ToString() + "    " + pv.IdProducto.ToString());
+            //}
+
+            InicioSesion.IniciarSesion();
         }
     }
 
