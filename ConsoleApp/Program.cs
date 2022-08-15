@@ -17,13 +17,22 @@ namespace ConsoleApp
             }*/
 
 
-            UsuarioHandler usu = new UsuarioHandler();
+            //UsuarioHandler usu = new UsuarioHandler();
 
-            List<Usuario> lista = usu.GetUsuario();
+            //List<Usuario> lista = usu.GetUsuario();
 
-            foreach (Usuario u in lista)
+            //foreach (Usuario u in lista)
+            //{
+            //    Console.WriteLine(u.Id.ToString() + "   " + u.Nombre.ToString());
+            //}
+
+            ProductoVendidoHandler prodvenhan = new ProductoVendidoHandler();
+
+            List<ProductoVendido> lista = prodvenhan.GetProdVen();
+
+            foreach (ProductoVendido pv in lista)
             {
-                Console.WriteLine(u.Id.ToString() + "   " + u.Nombre.ToString());
+                Console.WriteLine(pv.Id.ToString() + "    " + pv.IdProducto.ToString());
             }
         }
     }
